@@ -1,21 +1,25 @@
+/* global resets */
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
+/* makes the header and footer stay on either end of the screen */
 body, html{
     height: 100%;
-   
-
 }
+/* sets the main element to flex to aid in button location */
 main{
     display: flex;
     justify-content: center;
 }
+/* sets the background color */
 body{
     background-color: powderblue;
 }
+/* styles the header */
 header{
     height: 45px;
     background-color: palevioletred;
@@ -23,30 +27,23 @@ header{
     text-align: center;
     width: 100%;
 }
+/* padds the text in the header */
 header h2{
     padding: 1%;
-    
 }
+/* adds a cute color to countdown timer */
 #countdown{
     color: palevioletred;
     margin: 25px;
-    
 }
-.form-control{
-    display: inline;
-}
+/* styles the text in the header */
 .texts{
     color: darkslategray;
     text-align: center;
     font-weight: 800;
     margin: 30px;
-    
 }
-
-#buttonBox{
-    display: flex;
-    width: 100%;
-}
+/* styles the quiz buttons */
 .btn {
     border: none;
     background-color: rgb(8, 111, 175);
@@ -62,7 +59,7 @@ header h2{
     cursor: pointer;
     flex-grow: .5;
   }
-
+/* styles the last two displays in the quiz */
 .box-style{
     margin: 20px;
     background-color: plum;
@@ -70,11 +67,10 @@ header h2{
     height: 50%;
     width: 50%;
     justify-content: center;
-    /* align-items: center; */
     flex-direction: column
 } 
+/* styles the 'would you like to play again' button */
 #restart{
-    
     background-color: rgb(8, 111, 175);
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px;
@@ -88,7 +84,7 @@ header h2{
     flex-basis: 50px;
     justify-content: center;
 }
-  
+  /* styles the form element */
 form {
     width: 400px;
     margin: 0 auto;
@@ -96,16 +92,9 @@ form {
     padding: 25px;
     display: flex;
     flex-direction: column;
-
 }
-
+/* styles the form input field */
 form input{
     margin-bottom: 10px;
     padding: 8px 10px;
-
-}
-
-
-form input{
-    padding: 10px 20px;
 }
